@@ -17,6 +17,7 @@ function Checkout() {
         />
         <div>
           <h2 className="checkout_title">your Shooping Busket</h2>
+          {/* busket item render here */}
           <CheckoutProduct /> <CheckoutProduct /> <CheckoutProduct />{" "}
           <CheckoutProduct />
           {/* {basket.map((item) => (
