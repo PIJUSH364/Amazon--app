@@ -4,7 +4,7 @@ import { useStateValue } from "../dataLayer/StateProvider";
 
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
-  console.log(basket);
+  // console.log(basket);
   const addToBusket = () => {
     // dispatch the item from data layer
 
@@ -19,25 +19,6 @@ function Product({ id, title, image, price, rating }) {
       },
     });
   };
-
-  // console.log("this is the busket", basket);
-
-  // const addToBusket = () => {
-  //   // dispatch the item from data layer
-  //   dispatch(
-  //     {
-  //       type: "ADD_TO_BASKET",
-  //       item: {
-  //         id: id,
-  //         title: title,
-  //         image: image,
-  //         price: price,
-  //         rating: rating,
-  //       },
-  //     },
-  //     []
-  //   );
-  // };
 
   return (
     <div className="product">

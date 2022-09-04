@@ -2,9 +2,13 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 500px;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 1em;
 }
 .checkoutProduct_info {
   padding-left: 20px;
+  text-align: left;
 }
 .checkoutProduct_info > button {
   background: #f0c14b;

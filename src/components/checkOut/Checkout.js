@@ -1,12 +1,27 @@
 import React from "react";
 import "./Checkout.css";
 import CheckoutProduct from "../checkOut/CheckoutProduct";
-
-// import { useStateValue } from "./StateProvider";
 import Subtotal from "../checkOut/Subtotal";
+import { useStateValue } from "../dataLayer/StateProvider";
 
 function Checkout() {
-  // const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
+  var key = Math.random();
+  const checkOut = basket.map((item) => {
+    return (
+      <>
+        <CheckoutProduct
+          key={key}
+          image={item.image}
+          title={item.title}
+          price={item.price}
+          rating={item.rating}
+          id={item.id}
+        />
+        
+      </>
+    );
+  });
   return (
     <div className="checkout">
       <div className="checkout_left">
@@ -18,22 +33,10 @@ function Checkout() {
         <div>
           <h2 className="checkout_title">your Shooping Busket</h2>
           {/* busket item render here */}
-          <CheckoutProduct /> <CheckoutProduct /> <CheckoutProduct />{" "}
-          <CheckoutProduct />
-          {/* {basket.map((item) => (
-            <CheckoutProduct
-              id={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
-            />
-          ))} */}
+          {checkOut}
         </div>
       </div>
-
       <div className="checkout_right">
-        {/* <h2>your subtotal will go here</h2> */}
         <Subtotal />
       </div>
     </div>

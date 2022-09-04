@@ -1,7 +1,9 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../dataLayer/StateProvider";
 function Header() {
+  const [{ basket }] = useStateValue();
   return (
     <div className="header">
       {" "}
@@ -40,7 +42,7 @@ function Header() {
             <i className="fa-solid fa-basket-shopping"></i>
 
             <span className="header_optionLineTwo header_BasketCount">
-              {/* {basket?.length} */}0
+              {basket?.length}
             </span>
           </div>
         </Link>
