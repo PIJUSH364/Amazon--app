@@ -34,4 +34,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.subtotal > button:hover {
+  background-color: #ffd8148d;
 }

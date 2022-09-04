@@ -31,12 +31,14 @@
   border: none;
   padding: 0.3em 0.7em;
   border-radius: 3px;
-  /* border-color: #a88734 #9c7e31 #846a29; */
   color: #111;
   float: left;
+  transition: all 0.5s ease-in-out;
+}
+.product button:hover {
+  background: #ffd814c9;
   cursor: pointer;
 }
-
 .product_price {
   margin-top: 5px;
 }

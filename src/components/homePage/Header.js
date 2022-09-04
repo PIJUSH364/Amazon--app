@@ -37,10 +37,9 @@ function Header() {
           <span className="header_optionLineOne">Your</span>
           <span className="header_optionLineTwo">Prime</span>
         </div>
-        <Link to="/checkout">
+        <Link to="/checkout" className=" basketItemNumber">
           <div className="header_optionBasket">
             <i className="fa-solid fa-basket-shopping"></i>
-
             <span className="header_optionLineTwo header_BasketCount">
               {basket?.length}
             </span>

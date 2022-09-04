@@ -17,14 +17,14 @@ function Home() {
             id="5456464426"
             title="Atomic Habits English  (Paperback, James Clear)"
             image="../images/img1.jpg"
-            price="19.99"
+            price="445"
             rating={4}
           />
           <Product
             id="5456464427"
             title="Croma 500W Mixer Grinder with 3 Stainless Steel Leak-proof Jars, 3 speed & Pulse function, 2 years warranty"
             image="../images/img5.png"
-            price="19.99"
+            price="1360"
             rating={4}
           />
         </div>
@@ -33,7 +33,7 @@ function Home() {
             id="5456464428"
             title="Echo Dot (4th Gen, 2020 release)| Smart speaker with Alexa (Black)"
             image="../images/img3.png"
-            price="19.99"
+            price="2999"
             rating={4}
           />
 
@@ -41,14 +41,14 @@ function Home() {
             id="5456464429"
             title="Apple iPad 9th Gen 2021 25.91 cm (10.2 inch) Wi-Fi Tablet , 64 GB, Space Grey, MK2K3HN/A"
             image="../images/img4.png"
-            price="19.99"
+            price="40599"
             rating={4}
           />
           <Product
             id="5456464436"
             title="Apple Watch SE (GPS, 40mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular"
             image="../images/img2.png"
-            price="19.99"
+            price="18900"
             rating={4}
           />
         </div>
@@ -58,7 +58,7 @@ function Home() {
             title="Samsung 123.9cm (49) Gaming Monitor with 32:9 Aspect Ratio Display and 240Hz Refresh Rate - LC49G95TSSWXXL
             Samsung 123.9cm (49Gaming Monitor with 32:9 Aspect Ratio Display and 240Hz R  fresh Rate - LC49G95TSSWXXL"
             image="../images/img6.png"
-            price="19.99"
+            price="46820"
             rating={4}
           />
         </div>

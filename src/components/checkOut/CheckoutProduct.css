@@ -17,7 +17,11 @@
   border: none;
   padding: 0.5em 1em;
   border-radius: 5px;
-  /* border-color: #a88734 #9c7e31 #846a29; */
+  transition: all 0.5s ease-in-out;
+}
+.checkoutProduct_info > button:hover {
+  background: #ffd814a8;
+  cursor: pointer;
 }
 .checkoutProduct_image {
   object-fit: contain;
