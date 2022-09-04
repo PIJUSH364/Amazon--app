@@ -10,10 +10,11 @@ function Subtotal() {
     return Number(e.price);
   });
   const amount = (preValue, currentValue) => {
-    return (currentValue += preValue);
+    return Math.floor((currentValue += preValue));
   };
   const subTotal = priceAll.reduce(amount, 0);
   console.log(subTotal);
+  // const x=Math.floor
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -21,7 +22,7 @@ function Subtotal() {
         value={subTotal}
         displayType={"text"}
         thousandSeparator={true}
-        prefix={"$"}
+        prefix={"₹"}
         renderText={(value) => (
           <>
             <p>

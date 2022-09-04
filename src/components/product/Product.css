@@ -25,12 +25,16 @@
 }
 
 .product button {
-  background: #f0c14b;
+  background: #ffd814;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  border: none;
+  padding: 0.3em 0.7em;
+  border-radius: 3px;
+  /* border-color: #a88734 #9c7e31 #846a29; */
   color: #111;
   float: left;
+  cursor: pointer;
 }
 
 .product_price {
